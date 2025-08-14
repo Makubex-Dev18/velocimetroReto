@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocímetro Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fuente Orbitron -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-black flex justify-center items-center h-screen relative overflow-hidden"
+  >
+    <div class="absolute bottom-20 left-0 w-full h-full grid-floor"></div>
+
+    <!-- Contenedor principal -->
+    <div class="relative flex flex-col items-center z-10 scale-[1.8]">
+      <!-- Círculo -->
+      <div
+        class="w-80 h-80 rounded-full border border-blue-600 flex flex-col justify-center items-center circle-pulse"
+      >
+        <span
+          style="font-family: 'Orbitron', sans-serif"
+          id="speed"
+          class="text-white text-9xl font-light"
+          >0</span
+        >
+        <span class="text-gray-300 text-4xl">km/h</span>
+      </div>
+
+      <div class="mt-20 text-white text-400 font-bold text-4xl">
+        D
+        <div class="w-full h-[4px] bg-red-500 mt-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
