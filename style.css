@@ -22,7 +22,7 @@
       transform: perspective(500px) rotateX(75deg);
       transform-origin: bottom;
       opacity: 0.7;
-      animation: grid-flow 3s linear infinite;
+      animation: grid-flow 4s linear infinite;
     }
 
     @keyframes grid-flow {
@@ -42,5 +42,5 @@
       }
     }
     .circle-pulse {
-      animation: pulse-border 2s ease-in-out infinite;
+      animation: pulse-border 3s ease-in-out infinite;
     }
